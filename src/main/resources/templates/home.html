@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<p>HI</p>
+<table class ="table">
+    <th head></th>
+    <tr th:each="ls : ${lst}">
+        <td th:text="${ls.name}"></td>
+        <td th:text="${ls.jobdesc}"></td>
+        <td th:text="${ls.workHours}"></td>
+
+    </tr>
+</table>
+</body>
+</html>
